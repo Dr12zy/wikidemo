@@ -1,1183 +1,243 @@
-2022-06-03 00:21:46.076 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m52s466ms).
-2022-06-03 02:05:57.679 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-06-03 02:05:57.699 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-06-03 02:05:59.051 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 87247 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 02:05:59.052 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 02:05:59.076 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-03 02:05:59.076 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-03 02:05:59.488 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 02:05:59.491 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:05:59.492 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 02:05:59.492 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 02:05:59.509 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 02:05:59.509 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 432 ms
-2022-06-03 02:05:59.708 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 02:05:59.713 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:05:59.724 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 02:05:59.729 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.99 seconds (JVM running for 1.133)
-2022-06-03 02:05:59.730 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 02:05:59.730 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 02:06:03.553 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 02:06:03.553 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 02:06:03.554 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-06-03 02:06:03.575 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-06-03 02:06:03.689 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-06-03 02:15:43.351 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-06-03 02:15:43.355 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-06-03 02:16:32.479 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 98570 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 02:16:32.480 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 02:16:32.504 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-03 02:16:32.504 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-03 02:16:32.889 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 02:16:32.893 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:16:32.894 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 02:16:32.894 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 02:16:32.915 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 02:16:32.916 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 411 ms
-2022-06-03 02:16:33.135 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 02:16:33.140 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:16:33.151 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 02:16:33.156 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 1.053 seconds (JVM running for 1.202)
-2022-06-03 02:16:33.158 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 02:16:33.158 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 02:43:18.188 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 27795 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 02:43:18.189 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 02:43:18.214 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-03 02:43:18.215 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-03 02:43:18.580 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 02:43:18.583 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:43:18.584 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 02:43:18.584 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 02:43:18.601 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 02:43:18.601 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 386 ms
-2022-06-03 02:43:18.776 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 02:43:18.781 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:43:18.791 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 02:43:18.796 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.792 seconds (JVM running for 0.948)
-2022-06-03 02:43:18.797 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 02:43:18.797 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 02:43:36.725 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 02:43:36.725 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 02:43:36.726 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-06-03 02:43:37.023 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-06-03 02:43:37.135 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-06-03 02:46:07.798 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-06-03 02:46:07.806 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-06-03 02:46:08.044 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 27795 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 02:46:08.044 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 02:46:08.128 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 02:46:08.128 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:46:08.128 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 02:46:08.129 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 02:46:08.132 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 02:46:08.132 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 86 ms
-2022-06-03 02:46:08.182 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 02:46:08.185 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 02:46:08.185 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 02:46:08.187 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.353 seconds (JVM running for 170.338)
-2022-06-03 02:46:08.188 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 02:46:08.188 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 02:46:08.188 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:21:27.291 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:21:27.292 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:21:27.314 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-03 03:21:27.314 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-03 03:21:27.675 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:21:27.679 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:21:27.679 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:21:27.679 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:21:27.695 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:21:27.695 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 381 ms
-2022-06-03 03:21:27.894 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:21:27.899 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:21:27.910 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:21:27.914 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.824 seconds (JVM running for 0.976)
-2022-06-03 03:21:27.916 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:21:27.916 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:21:33.597 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 03:21:33.598 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 03:21:33.598 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-06-03 03:21:33.619 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-06-03 03:21:33.732 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-06-03 03:21:33.773 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/DemoMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.DemoMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`         from demo
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+2022-06-04 00:05:06.442 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=46m32s721ms).
+2022-06-04 00:22:17.367 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m40s908ms).
+2022-06-04 02:03:22.613 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h23m17s394ms).
+2022-06-04 02:51:14.044 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h5m39s283ms).
+2022-06-04 03:11:25.534 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=20m11s490ms).
+2022-06-04 03:47:21.145 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=35m25s624ms).
+2022-06-04 05:06:54.779 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h19m33s634ms).
+2022-06-04 06:42:33.631 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h35m38s852ms).
+2022-06-04 07:49:26.658 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h6m53s27ms).
+2022-06-04 09:14:53.597 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h24m26s923ms).
+2022-06-04 09:31:31.307 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m37s710ms).
+2022-06-04 10:07:30.346 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=35m29s28ms).
+2022-06-04 11:47:40.367 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h40m10s22ms).
+2022-06-04 13:10:03.473 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h22m23s106ms).
+2022-06-04 14:48:59.653 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h38m56s180ms).
+2022-06-04 16:12:06.904 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h23m7s251ms).
+2022-06-04 16:17:40.128 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m33s224ms).
+2022-06-04 17:42:53.631 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m11s138ms).
+2022-06-04 17:59:23.842 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m30s211ms).
+2022-06-04 18:03:30.304 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m6s435ms).
+2022-06-04 18:23:47.221 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m15s579ms).
+2022-06-04 19:22:49.469 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-06-04 19:22:49.471 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-06-04 19:22:49.561 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:22:49.561 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:22:49.641 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:22:49.641 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:22:49.641 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:22:49.641 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:22:49.644 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:22:49.644 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 82 ms
+2022-06-04 19:22:49.711 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:22:49.714 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:22:49.715 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:22:49.717 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.225 seconds (JVM running for 10808.945)
+2022-06-04 19:22:49.718 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:22:49.718 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:22:49.718 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:23:32.519 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:23:32.519 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:23:32.584 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:23:32.584 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:23:32.584 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:23:32.584 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:23:32.587 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:23:32.587 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 67 ms
+2022-06-04 19:23:32.642 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:23:32.644 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:23:32.645 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:23:32.647 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.141 seconds (JVM running for 10851.875)
+2022-06-04 19:23:32.647 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:23:32.647 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:23:32.648 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:23:58.367 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:23:58.368 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:23:58.431 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:23:58.431 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:23:58.431 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:23:58.431 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:23:58.434 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:23:58.434 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 66 ms
+2022-06-04 19:23:58.486 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:23:58.488 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:23:58.489 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:23:58.491 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.138 seconds (JVM running for 10877.719)
+2022-06-04 19:23:58.491 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:23:58.491 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:23:58.491 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:24:27.585 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:24:27.585 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:24:27.645 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:24:27.645 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:24:27.645 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:24:27.645 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:24:27.648 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:24:27.648 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 62 ms
+2022-06-04 19:24:27.696 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:24:27.698 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:24:27.699 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:24:27.701 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.128 seconds (JVM running for 10906.929)
+2022-06-04 19:24:27.701 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:24:27.701 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:24:27.701 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:24:39.282 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-04 19:24:39.282 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-06-04 19:24:39.283 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-06-04 19:24:39.296 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2022-06-04 19:24:39.309 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2022-06-04 19:27:33.009 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2022-06-04 19:27:33.013 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2022-06-04 19:27:33.180 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:27:33.180 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:27:33.241 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:27:33.241 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:27:33.241 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:27:33.241 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:27:33.244 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:27:33.244 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 63 ms
+2022-06-04 19:27:33.296 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:27:33.298 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:27:33.299 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:27:33.301 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.259 seconds (JVM running for 11092.529)
+2022-06-04 19:27:33.301 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:27:33.301 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:27:33.301 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:28:14.118 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:28:14.126 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:28:14.189 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:28:14.189 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:28:14.190 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:28:14.190 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:28:14.192 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:28:14.192 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 64 ms
+2022-06-04 19:28:14.241 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:28:14.243 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:28:14.244 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:28:14.246 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.139 seconds (JVM running for 11133.474)
+2022-06-04 19:28:14.246 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:28:14.246 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:28:14.247 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:28:44.008 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:28:44.008 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:28:44.062 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:28:44.063 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:28:44.063 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:28:44.063 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:28:44.065 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:28:44.065 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 57 ms
+2022-06-04 19:28:44.112 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:28:44.115 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:28:44.115 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:28:44.117 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.121 seconds (JVM running for 11163.345)
+2022-06-04 19:28:44.117 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:28:44.118 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:28:44.118 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:28:56.727 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:28:56.727 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:28:56.791 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:28:56.791 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:28:56.791 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:28:56.791 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:28:56.794 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:28:56.794 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 66 ms
+2022-06-04 19:28:56.815 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/com/jiawa/wiki/controller/EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.jiawa.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@270c402e]
+2022-06-04 19:28:56.815 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-06-04 19:28:56.818 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-06-04 19:28:56.827 ERROR org.springframework.boot.SpringApplication        :830  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/com/jiawa/wiki/controller/EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.jiawa.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@270c402e]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at com.jiawa.wiki.config.WikiApplication.main(WikiApplication.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy3/jdk.proxy3.$Proxy63.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.DemoService.list(DemoService.java:20)
-	at com.jiawa.wiki.controller.DemoController.list(DemoController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 03:21:51.542 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-06-03 03:21:51.550 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-06-03 03:21:51.599 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:21:51.599 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:21:51.688 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:21:51.688 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:21:51.688 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:21:51.688 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:21:51.692 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:21:51.692 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 92 ms
-2022-06-03 03:21:51.760 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:21:51.763 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:21:51.764 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:21:51.766 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.186 seconds (JVM running for 24.828)
-2022-06-03 03:21:51.766 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:21:51.767 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:21:51.767 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:21:57.434 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 03:21:57.434 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 03:21:57.434 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-06-03 03:21:57.435 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2022-06-03 03:21:57.447 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2022-06-03 03:21:57.449 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/DemoMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.DemoMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`         from demo
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy5/jdk.proxy5.$Proxy72.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.DemoService.list(DemoService.java:20)
-	at com.jiawa.wiki.controller.DemoController.list(DemoController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 03:23:53.008 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/DemoMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.DemoMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`         from demo
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy5/jdk.proxy5.$Proxy72.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.DemoService.list(DemoService.java:20)
-	at com.jiawa.wiki.controller.DemoController.list(DemoController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 03:24:44.829 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
-2022-06-03 03:24:44.834 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
-2022-06-03 03:24:45.106 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:24:45.106 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:24:45.187 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:24:45.187 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:24:45.187 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:24:45.187 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:24:45.190 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:24:45.190 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 83 ms
-2022-06-03 03:24:45.243 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:24:45.247 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:24:45.248 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:24:45.249 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.379 seconds (JVM running for 198.31)
-2022-06-03 03:24:45.250 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:24:45.250 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:24:45.250 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:24:58.125 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 03:24:58.125 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 03:24:58.125 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-06-03 03:24:59.625 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
-2022-06-03 03:24:59.640 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
-2022-06-03 03:25:05.080 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/DemoMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.DemoMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`         from demo
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy6/jdk.proxy6.$Proxy74.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.DemoService.list(DemoService.java:20)
-	at com.jiawa.wiki.controller.DemoController.list(DemoController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 03:26:13.025 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/DemoMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.DemoMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`         from demo
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy6/jdk.proxy6.$Proxy74.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.DemoService.list(DemoService.java:20)
-	at com.jiawa.wiki.controller.DemoController.list(DemoController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 03:29:11.610 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/DemoMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.DemoMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`         from demo
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy6/jdk.proxy6.$Proxy74.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.DemoService.list(DemoService.java:20)
-	at com.jiawa.wiki.controller.DemoController.list(DemoController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 03:33:01.433 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
-2022-06-03 03:33:01.436 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
-2022-06-03 03:33:01.622 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:33:01.622 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:33:01.688 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:33:01.688 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:33:01.688 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:33:01.689 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:33:01.692 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:33:01.692 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 69 ms
-2022-06-03 03:33:01.749 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:33:01.752 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:33:01.755 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:33:01.757 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.295 seconds (JVM running for 694.814)
-2022-06-03 03:33:01.757 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:33:01.757 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:33:01.757 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:33:12.291 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:33:12.291 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:33:12.350 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:33:12.351 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:33:12.351 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:33:12.351 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:33:12.353 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:33:12.354 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 62 ms
-2022-06-03 03:33:12.400 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:33:12.404 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:33:12.404 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:33:12.406 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.129 seconds (JVM running for 705.464)
-2022-06-03 03:33:12.407 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:33:12.407 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:33:12.407 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:33:14.869 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:33:14.869 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:33:14.935 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:33:14.936 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:33:14.936 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:33:14.936 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:33:14.939 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:33:14.939 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 68 ms
-2022-06-03 03:33:14.995 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:33:14.998 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:33:14.999 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:33:15.001 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.144 seconds (JVM running for 708.058)
-2022-06-03 03:33:15.002 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:33:15.002 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:33:15.002 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:33:18.868 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 03:33:18.869 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 03:33:18.870 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-06-03 03:33:18.871 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
-2022-06-03 03:33:18.886 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
-2022-06-03 03:33:18.887 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/DemoMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.DemoMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`         from demo
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.demo' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy9/jdk.proxy9.$Proxy80.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.DemoService.list(DemoService.java:20)
-	at com.jiawa.wiki.controller.DemoController.list(DemoController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 03:36:17.531 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
-2022-06-03 03:36:17.536 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
-2022-06-03 03:36:17.734 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:36:17.734 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:36:17.807 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:36:17.807 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:36:17.808 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:36:17.808 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:36:17.810 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:36:17.810 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 74 ms
-2022-06-03 03:36:17.854 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:36:17.857 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:36:17.859 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:36:17.861 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.294 seconds (JVM running for 890.944)
-2022-06-03 03:36:17.861 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:36:17.861 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:36:17.861 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:38:04.721 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:38:04.721 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:38:04.793 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:38:04.794 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:38:04.794 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:38:04.794 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:38:04.797 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:38:04.797 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 75 ms
-2022-06-03 03:38:04.850 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:38:04.854 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:38:04.855 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:38:04.857 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.153 seconds (JVM running for 997.941)
-2022-06-03 03:38:04.858 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:38:04.858 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:38:04.858 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:38:05.198 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 03:38:05.199 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 03:38:05.199 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-06-03 03:38:05.200 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
-2022-06-03 03:38:05.211 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
-2022-06-03 03:38:13.334 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
-2022-06-03 03:38:13.340 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
-2022-06-03 03:38:13.373 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 67730 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:38:13.373 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:38:13.436 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:38:13.436 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:38:13.436 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:38:13.436 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:38:13.439 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:38:13.439 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 66 ms
-2022-06-03 03:38:13.492 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:38:13.496 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:38:13.497 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:38:13.499 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.137 seconds (JVM running for 1006.583)
-2022-06-03 03:38:13.500 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 03:38:13.500 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:38:13.500 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:38:14.095 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 03:38:14.095 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 03:38:14.096 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-06-03 03:38:14.097 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-6 - Starting...
-2022-06-03 03:38:14.114 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-6 - Start completed.
-2022-06-03 03:39:17.234 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-6 - Shutdown initiated...
-2022-06-03 03:39:17.239 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-6 - Shutdown completed.
-2022-06-03 03:39:18.155 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 90609 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 03:39:18.156 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 03:39:18.181 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-03 03:39:18.182 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-03 03:39:18.539 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 03:39:18.542 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:39:18.543 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 03:39:18.543 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 03:39:18.560 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 03:39:18.560 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 378 ms
-2022-06-03 03:39:18.767 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 03:39:18.773 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 03:39:18.783 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 03:39:18.788 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.798 seconds (JVM running for 0.945)
-2022-06-03 03:39:18.789 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 03:39:18.789 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 03:39:23.878 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 03:39:23.879 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 03:39:23.879 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2022-06-03 15:09:35.289 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:09:35.290 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:09:35.313 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-03 15:09:35.313 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-03 15:09:35.691 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:09:35.694 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:09:35.694 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:09:35.694 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:09:35.712 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:09:35.712 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 398 ms
-2022-06-03 15:09:35.935 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:09:35.940 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:09:35.946 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:09:35.950 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.995 seconds (JVM running for 1.157)
-2022-06-03 15:09:35.952 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:09:35.952 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:13:05.894 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:13:05.894 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:13:05.987 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:13:05.987 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:13:05.987 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:13:05.987 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:13:05.991 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:13:05.991 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 95 ms
-2022-06-03 15:13:06.063 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:13:06.065 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:13:06.066 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:13:06.069 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.316 seconds (JVM running for 211.275)
-2022-06-03 15:13:06.070 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:13:06.070 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:13:06.070 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:13:51.933 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:13:51.933 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:13:52.004 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:13:52.004 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:13:52.005 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:13:52.005 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:13:52.007 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:13:52.008 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 72 ms
-2022-06-03 15:13:52.072 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:13:52.077 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:13:52.078 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:13:52.080 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.16 seconds (JVM running for 257.286)
-2022-06-03 15:13:52.081 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:13:52.081 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:13:52.081 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:13:56.579 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:13:56.579 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:13:56.640 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:13:56.640 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:13:56.640 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:13:56.641 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:13:56.643 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:13:56.644 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 64 ms
-2022-06-03 15:13:56.695 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:13:56.697 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:13:56.698 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:13:56.700 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.133 seconds (JVM running for 261.905)
-2022-06-03 15:13:56.700 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:13:56.700 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:13:56.700 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:14:02.187 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:14:02.187 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:14:02.242 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:14:02.242 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:14:02.242 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:14:02.242 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:14:02.245 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:14:02.245 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 57 ms
-2022-06-03 15:14:02.297 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:14:02.300 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:14:02.301 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:14:02.302 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.127 seconds (JVM running for 267.508)
-2022-06-03 15:14:02.303 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:14:02.303 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:14:02.303 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:14:06.181 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:14:06.181 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:14:06.241 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:14:06.242 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:14:06.242 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:14:06.242 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:14:06.245 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:14:06.245 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 63 ms
-2022-06-03 15:14:06.304 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:14:06.307 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:14:06.308 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:14:06.310 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.141 seconds (JVM running for 271.516)
-2022-06-03 15:14:06.311 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:14:06.311 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:14:06.311 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:17:32.719 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:17:32.719 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:17:32.787 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:17:32.788 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:17:32.788 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:17:32.788 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:17:32.791 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:17:32.791 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 70 ms
-2022-06-03 15:17:32.846 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:17:32.848 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:17:32.849 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:17:32.851 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.148 seconds (JVM running for 478.057)
-2022-06-03 15:17:32.851 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:17:32.852 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:17:32.852 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:19:19.593 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 43213 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:19:19.594 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:19:19.674 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:19:19.675 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:19:19.675 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:19:19.675 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:19:19.678 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:19:19.678 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 82 ms
-2022-06-03 15:19:19.729 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:19:19.731 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:19:19.732 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:19:19.733 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.385 seconds (JVM running for 584.939)
-2022-06-03 15:19:19.734 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:19:19.734 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:19:19.734 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:29:00.994 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62860 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:29:00.995 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:29:01.016 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-03 15:29:01.016 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-03 15:29:01.365 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:29:01.368 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:29:01.368 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:29:01.369 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:29:01.385 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:29:01.385 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 368 ms
-2022-06-03 15:29:01.593 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:29:01.605 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:29:01.611 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:29:01.615 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.926 seconds (JVM running for 1.067)
-2022-06-03 15:29:01.616 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:29:01.617 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:29:06.846 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 15:29:06.846 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 15:29:06.847 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-06-03 15:29:06.863 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-06-03 15:29:06.971 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-06-03 15:29:07.007 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook' doesn't exist
-### The error may exist in file [/Users/yangzihao/IdeaProjects/wiki/target/classes/mapper/EbookMapper.xml]
-### The error may involve com.jiawa.wiki.mapper.EbookMapper.selectByExample-Inline
-### The error occurred while setting parameters
-### SQL: select                 id, `name`, category1_id, category2_id, description, cover, doc_count, view_count,      vote_count         from ebook
-### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook' doesn't exist
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook' doesn't exist] with root cause
-java.sql.SQLSyntaxErrorException: Table 'wiki.ebook' doesn't exist
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at jdk.proxy2/jdk.proxy2.$Proxy62.selectList(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
-	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at jdk.proxy3/jdk.proxy3.$Proxy64.selectByExample(Unknown Source)
-	at com.jiawa.wiki.service.EbookService.list(EbookService.java:20)
-	at com.jiawa.wiki.controller.EbookController.list(EbookController.java:23)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-06-03 15:47:31.720 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-06-03 15:47:31.729 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-06-03 15:47:31.969 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62860 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:47:31.970 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:47:32.080 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:47:32.080 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:47:32.080 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:47:32.080 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:47:32.084 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:47:32.084 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 112 ms
-2022-06-03 15:47:32.156 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:47:32.159 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:47:32.160 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:47:32.162 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.4 seconds (JVM running for 1111.676)
-2022-06-03 15:47:32.163 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:47:32.163 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:47:32.163 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:51:49.171 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62860 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:51:49.171 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:51:49.240 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:51:49.240 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:51:49.241 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:51:49.241 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:51:49.243 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:51:49.244 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 72 ms
-2022-06-03 15:51:49.303 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:51:49.306 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:51:49.307 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:51:49.308 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.156 seconds (JVM running for 1368.825)
-2022-06-03 15:51:49.309 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:51:49.309 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:51:49.309 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:55:44.215 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62860 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
-2022-06-03 15:55:44.215 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-06-03 15:55:44.301 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2022-06-03 15:55:44.301 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:55:44.301 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-06-03 15:55:44.301 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-06-03 15:55:44.303 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-06-03 15:55:44.304 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 88 ms
-2022-06-03 15:55:44.356 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-06-03 15:55:44.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2022-06-03 15:55:44.359 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2022-06-03 15:55:44.360 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.353 seconds (JVM running for 1603.88)
-2022-06-03 15:55:44.361 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2022-06-03 15:55:44.361 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
-2022-06-03 15:55:44.361 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2022-06-03 15:56:00.700 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-03 15:56:00.700 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-06-03 15:56:00.701 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-06-03 15:56:00.702 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2022-06-03 15:56:00.715 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.jiawa.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@270c402e]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/jiawa/wiki/service/EbookService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.jiawa.wiki.service.EbookService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 28 common frames omitted
+2022-06-04 19:34:20.509 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:34:20.509 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:34:20.585 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:34:20.585 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:34:20.585 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:34:20.585 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:34:20.588 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:34:20.588 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 77 ms
+2022-06-04 19:34:20.634 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:34:20.636 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:34:20.637 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:34:20.639 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.332 seconds (JVM running for 11499.867)
+2022-06-04 19:34:20.639 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:34:20.639 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:34:20.639 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:34:55.423 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:34:55.423 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:34:55.489 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:34:55.490 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:34:55.490 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:34:55.490 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:34:55.492 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:34:55.492 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 68 ms
+2022-06-04 19:34:55.544 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:34:55.547 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:34:55.547 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:34:55.549 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.137 seconds (JVM running for 11534.777)
+2022-06-04 19:34:55.549 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:34:55.549 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:34:55.550 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:35:24.309 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 62357 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-06-04 19:35:24.309 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-04 19:35:24.375 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-06-04 19:35:24.375 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:35:24.376 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-04 19:35:24.376 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-04 19:35:24.379 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-04 19:35:24.379 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 68 ms
+2022-06-04 19:35:24.428 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-04 19:35:24.430 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-06-04 19:35:24.431 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-06-04 19:35:24.432 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.141 seconds (JVM running for 11563.661)
+2022-06-04 19:35:24.433 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-06-04 19:35:24.433 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-06-04 19:35:24.433 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-06-04 19:35:41.395 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-04 19:35:41.395 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-06-04 19:35:41.396 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-06-04 19:35:41.400 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2022-06-04 19:35:41.417 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
