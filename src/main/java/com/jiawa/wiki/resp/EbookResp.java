@@ -3,6 +3,8 @@ package com.jiawa.wiki.resp;
 public class EbookResp {
 
 
+    private Long id;
+
     private String name;
 
     private Long category1Id;
@@ -28,6 +30,10 @@ public class EbookResp {
     public void setName(String name) {
         this.name = name;
     }
+
+    public long getId() { return id; }
+
+    public void setId(Long Id) { this.id = Id; }
 
     public Long getCategory1Id() {
         return category1Id;
@@ -92,6 +98,7 @@ public class EbookResp {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
 
+        sb.append(", Id=").append(id);
         sb.append(", name=").append(name);
         sb.append(", category1Id=").append(category1Id);
         sb.append(", category2Id=").append(category2Id);

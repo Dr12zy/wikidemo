@@ -31,6 +31,7 @@ public class EbookService {
         for (Ebook ebook : ebooklist) {
             EbookResp ebookResp = new EbookResp();
             BeanUtils.copyProperties(ebook, ebookResp);
+//             ebookResp.setId(123L);
 
             respList.add(ebookResp);
         }
