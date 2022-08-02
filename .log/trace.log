@@ -83,3 +83,5 @@ java.lang.IllegalArgumentException: Invalid character found in the request targe
 2022-08-02 13:40:28.543 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m849ms).
 2022-08-02 13:59:10.443 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=18m11s890ms).
 2022-08-02 14:16:19.680 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m39s217ms).
+2022-08-02 16:43:27.475 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-08-02 16:43:27.478 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
