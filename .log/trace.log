@@ -151,3 +151,27 @@ java.lang.IllegalArgumentException: Invalid character found in the request targe
 2022-08-02 18:48:03.950 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=58s486ms).
 2022-08-02 19:05:12.255 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=16m8s269ms).
 2022-08-02 20:08:48.754 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=8m35s740ms).
+2022-08-02 23:38:19.056 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-08-02 23:38:19.058 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-08-02 23:38:22.460 INFO  com.jiawa.wiki.config.WikiApplication             :55   [32m                  [0;39m Starting WikiApplication using Java 17.0.2 on yangzihaos-MacBook-Pro.local with PID 34052 (/Users/yangzihao/IdeaProjects/wiki/target/classes started by yangzihao in /Users/yangzihao/IdeaProjects/wiki)
+2022-08-02 23:38:22.461 INFO  com.jiawa.wiki.config.WikiApplication             :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-02 23:38:22.485 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-02 23:38:22.485 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-02 23:38:22.874 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-08-02 23:38:22.877 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-08-02 23:38:22.877 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-02 23:38:22.877 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-08-02 23:38:22.896 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-02 23:38:22.896 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 410 ms
+2022-08-02 23:38:23.139 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-02 23:38:23.144 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-08-02 23:38:23.150 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-08-02 23:38:23.156 INFO  com.jiawa.wiki.config.WikiApplication             :61   [32m                  [0;39m Started WikiApplication in 0.995 seconds (JVM running for 1.154)
+2022-08-02 23:38:23.158 INFO  com.jiawa.wiki.config.WikiApplication             :22   [32m                  [0;39m 启动成功！！
+2022-08-02 23:38:23.158 INFO  com.jiawa.wiki.config.WikiApplication             :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-08-02 23:38:34.111 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-02 23:38:34.111 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-08-02 23:38:34.112 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-08-02 23:38:34.147 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-08-02 23:38:34.343 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-08-02 23:41:04.307 WARN  com.zaxxer.hikari.pool.HikariPool                 :780  [32m                  [0;39m HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s852ms), soft-evicting connections from pool.
