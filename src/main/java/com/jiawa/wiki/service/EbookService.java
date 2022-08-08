@@ -6,8 +6,9 @@ import com.github.pagehelper.PageInfo;
 import com.jiawa.wiki.domain.Ebook;
 import com.jiawa.wiki.domain.EbookExample;
 import com.jiawa.wiki.mapper.EbookMapper;
-import com.jiawa.wiki.req.EbookReq;
-import com.jiawa.wiki.resp.EbookResp;
+import com.jiawa.wiki.req.EbookQueryReq;
+import com.jiawa.wiki.req.EbookSaveReq;
+import com.jiawa.wiki.resp.EbookQueryResp;
 import com.jiawa.wiki.resp.PageResp;
 import com.jiawa.wiki.util.CopyUtil;
 import org.slf4j.Logger;
@@ -29,7 +30,7 @@ public class EbookService {
     @Autowired
     private EbookMapper ebookMapper;
 
-    public PageResp<EbookResp> list(EbookReq req) {
+    public PageResp<EbookQueryResp> list(EbookQueryReq req) {
 
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
@@ -43,25 +44,36 @@ public class EbookService {
         LOG.info("总页数:{}", pageInfo.getPages());
 
 
-        List<EbookResp> respList = new ArrayList<>();
+        List<EbookQueryResp> respList = new ArrayList<>();
         for (Ebook ebook : ebooklist) {
 //            EbookResp ebookResp = new EbookResp();
 //            BeanUtils.copyProperties(ebook, ebookResp);
 
-            EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
+            EbookQueryResp ebookResp = CopyUtil.copy(ebook, EbookQueryResp.class);
 
             respList.add(ebookResp);
         }
 
 
-        List<EbookResp> list = CopyUtil.copyList(ebooklist, EbookResp.class);
-        PageResp<EbookResp> pageResp = new PageResp();
+        List<EbookQueryResp> list = CopyUtil.copyList(ebooklist, EbookQueryResp.class);
+        PageResp<EbookQueryResp> pageResp = new PageResp();
 
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
 
         return pageResp;
 
+    }
+
+    public void save(EbookSaveReq req){
+        Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        if(ObjectUtils.isEmpty(req.getId())){
+            //新增
+            ebookMapper.insert(ebook);
+        }else {
+            //更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
     }
 
 }
