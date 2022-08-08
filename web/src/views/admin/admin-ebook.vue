@@ -3,13 +3,11 @@
     <a-layout-content
         :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
-
       <p>
         <a-button type="primary" @click="add()" size="large">
           新增
         </a-button>
       </p>
-
       <a-table
           :columns="columns"
           :row-key="record => record.id"
@@ -58,11 +56,7 @@
         <a-input v-model:value="ebook.desc" type="textarea" />
       </a-form-item>
     </a-form>
-
-
   </a-modal>
-
-
 </template>
 
 <script lang="ts">
@@ -75,7 +69,7 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 2,
+      pageSize: 4,
       total: 0
     });
     const loading = ref(false);
@@ -123,11 +117,12 @@ export default defineComponent({
      **/
     const handleQuery = (params: any) => {
       loading.value = true;
-      axios.get("/ebook/list",{          params: {
+      axios.get("/ebook/list", {
+        params: {
           page: params.page,
           size: params.size
-        }}).then((response) => {
-
+        }
+      }).then((response) => {
         loading.value = false;
         const data = response.data;
         ebooks.value = data.content.list;
@@ -155,23 +150,27 @@ export default defineComponent({
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-
       axios.post("/ebook/save", ebook.value).then((response) => {
-
-        const data = response.data;
-        if (data.success){
+        const data = response.data; // data = commonResp
+        if (data.success) {
           modalVisible.value = false;
           modalLoading.value = false;
 
-          //重新加载列表
+          // 重新加载列表
           handleQuery({
             page: pagination.value.current,
             size: pagination.value.pageSize,
-
           });
         }
-
       });
+    };
+
+    /**
+     * 编辑
+     */
+    const edit = (record: any) => {
+      modalVisible.value = true;
+      ebook.value = record
     };
 
     /**
@@ -180,20 +179,12 @@ export default defineComponent({
     const add = () => {
       modalVisible.value = true;
       ebook.value = {};
-    }
-    /**
-     * 编辑
-     */
-    const edit = (record: any) => {
-      modalVisible.value = true;
-      ebook.value = record;
     };
 
     onMounted(() => {
       handleQuery({
         page: 1,
         size: pagination.value.pageSize,
-
       });
     });
 
